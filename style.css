@@ -1,0 +1,155 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    animation: header 1s ease-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+header h1{
+    font-size: 35px;
+    font-style: vederna;
+    font-weight: 600;
+    letter-spacing: 10px;
+    background: linear-gradient(160deg, #000, blue, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animations 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes animations{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+header h1:hover{
+    background: -moz-linear-gradient(red);
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 800;
+    cursor: alias;
+ 
+
+}
+.main{
+    width: 100%;
+    display: flex;
+
+}
+.content{
+    width: 50%;
+    margin-top: 9%;
+    margin-left: 6%;
+    color: white;
+    overflow: hidden;
+    animation: content 1.3s ease-in-out;
+
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+.content h1{
+    font-size: 80px;
+    margin-bottom: 2%;
+    letter-spacing: 7px;
+    font-family: sans-serif;
+
+}
+
+.content h3{
+    font-size: 27px;
+    margin-bottom: 4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span{
+    color: red;
+}
+.content p{
+    font-size: 21px;
+    margin-bottom: 4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button{
+    padding: 15px 30px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+button:hover{
+    background: linear-gradient(160deg, #000, darkblue, #000);
+}
+image{
+      width: 50%;
+      margin-top: 9%;
+
+}
+.image1{
+    width: 40rem;
+    margin-top: 22%;
+}
+header h1{
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, color white);
+    outline: none;
+}
+nav button:hover{
+    background: (255, 255, 1);
+    border-radius: 20px;
+}
+nav li{
+    font-size: 16px;
+    color: aquamarine;
+
+}
+.image2{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    margin: -300px -0 -0 -750px;
+    -webkit-transition: -webkit-transform 1s;
+}
+.image2:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+    opacity: 10px;
+}
+
+.image1:hover{
+    transform: perspective(500px) rotateZ(20deg);
+    transition: 0.3s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+    opacity: 10px;
+}

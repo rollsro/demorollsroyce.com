@@ -1,0 +1,62 @@
+body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: solid;
+    letter-spacing: 7px;
+    background: linear-gradient(160deg, violet, blue);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animation 7s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes animation{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+h2{
+    text-align: left;
+    letter-spacing: 4px;
+    margin-left: 10px;
+
+}
+span{
+    color: green;
+    text-transform: uppercase;
+}
+div{
+    animation: content 1s ease-in-out;
+
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translatey(-100%);
+    }
+}
+h2{
+    animation: content 1s ease-in-out;
+
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translatex(-50%);
+    }
+}
+img{
+    height: 50%;
+    width: 20%;
+    align-items: center;
+}
+
+
+

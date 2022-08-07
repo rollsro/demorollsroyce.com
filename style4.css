@@ -1,0 +1,30 @@
+body{
+    
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+h1{
+color: white;
+text-align: center;
+background: linear-gradient(160deg, rgb(255, 253, 253), darkblue, rgb(255, 255, 255));
+background-repeat: no-repeat;
+background-size: 80%;
+animation: animation 7s linear infinite;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+@keyframes animation{
+0%{
+    background-position: -500%;
+}
+100%{
+    background-position: 500%;
+}
+}
+
+img{
+height: 90%;
+width: 100%;
+}

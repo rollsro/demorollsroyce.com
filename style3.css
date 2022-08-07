@@ -1,0 +1,65 @@
+body{
+    
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+h1{
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: lowercase;
+    animation: height 0.4s ease-in-out;
+    background: linear-gradient(160deg, #000, violet, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animation 1.5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes animation{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+
+@keyframes height{
+    0%{
+        transform: translatex(-50%);
+    }
+}
+.image{
+    width: 40%;
+    height: 60%;
+    -webkit-transition: -webkit-transform 1s;
+}
+.image:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+    opacity: 10px;
+}
+
+p{
+    color: white;
+    text-align: justify;
+    font-size: x-small;
+    animation: content 2s ease-in-out;
+}
+@keyframes content{
+    0%{
+        transform: translatex(-50);
+    }
+}
+
+
+
+
+
+img{
+    width: 40%;
+    height: 80%;
+    margin-right: 5%;
+}
